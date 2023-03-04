@@ -44,9 +44,12 @@
                                     <constraint firstAttribute="width" secondItem="qfv-mH-Ptq" secondAttribute="height" multiplier="75:26" id="ILd-B2-zaT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nqu-gX-242"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,6 +69,12 @@
                             <constraint firstItem="qfv-mH-Ptq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="wC5-Gu-xK4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="IPb-1r-Csz" id="bcn-7f-lxq"/>
+                        <outlet property="redView" destination="a4z-3K-OoN" id="W71-VC-DIf"/>
+                        <outlet property="startButton" destination="qfv-mH-Ptq" id="833-Iu-3Vs"/>
+                        <outlet property="yellowView" destination="jNI-rD-6V3" id="k06-Am-i8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
